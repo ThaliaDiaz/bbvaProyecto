@@ -10,20 +10,19 @@ package pe.bbva.proyectobbva.model.entity;
  * @author Ronald R
  */
 public class Usuario {
-    
-    private String codigo;
-    private Integer dni;
-    private String contrasenia;
 
-    public Integer getDni() {
+    private String codigo;
+    private String dni;
+    private String contraseña;
+
+    public String getDni() {
         return dni;
     }
 
-    public void setDni(Integer dni) {
+    public void setDni(String dni) {
         this.dni = dni;
     }
 
-    
     public String getCodigo() {
         return codigo;
     }
@@ -32,15 +31,19 @@ public class Usuario {
         this.codigo = codigo;
     }
 
-    public String getContrasenia() {
-        return contrasenia;
+    public String getContraseña() {
+        return contraseña;
     }
 
-    public void setContrasenia(String contrasenia) {
-        this.contrasenia = contrasenia;
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Usuario{" + "codigo=" + codigo + ", dni=" + dni + ", contraseña=" + contraseña + '}';
+    }
+
     
     
 }

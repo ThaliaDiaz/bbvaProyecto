@@ -5,13 +5,14 @@
 <configuration>
     <typeAliases>
         <typeAlias type="pe.bbva.proyectobbva.model.entity.Banner" alias="Banner" />
+        <typeAlias type="pe.bbva.proyectobbva.model.entity.Usuario" alias="Usuario" />
     </typeAliases>
     <environments default="proyectobbva">
         <environment id="proyectobbva">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/tiendavirtual"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/bbvabd"/>
                 <property name="username" value="root"/>
                 <property name="password" value="mysql"/>
             </dataSource>
@@ -19,5 +20,6 @@
     </environments>
     <mappers>
         <mapper resource="pe/bbva/proyectobbva/model/repository/BannerMapper.xml" />
+        <mapper resource="pe/bbva/proyectobbva/model/repository/UsuarioMapper.xml" />
     </mappers>
 </configuration>
